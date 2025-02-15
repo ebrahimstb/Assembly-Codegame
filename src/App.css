@@ -63,6 +63,20 @@ span.chip{
   border-radius: 3px;
   padding: 4.5px;
 }
+span.chip.lost::before{
+  content: "x";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
 section.word {
   display: flex;
   justify-content: center;
@@ -94,6 +108,12 @@ section.keyboard > button {
   border: 1px solid #d7d7d7;
   cursor: pointer;
   border-radius: 3px;
+}
+section.button.correct {
+  background-color: #10a95b;
+}
+section.button.wrong {
+  background-color: #dc2f08;
 }
 section.new-game{
   display: flex;
